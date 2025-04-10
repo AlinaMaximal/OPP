@@ -1,29 +1,27 @@
 package Lab3;
 
-import java.util.Random;
 import java.util.Scanner;
 
-public class Task2 {
-
-    public static void main(String[] args) {
+public class Task2{
+    public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
-        int secretNumber = 7;
-        int userGuess = 0;
 
-        System.out.print("Вгадайте число");
+        System.out.println("Гра Відгадай число!");
+        System.out.print("Введіть число: ");
+        int guess = scanner.nextInt();
+        int randomNumber = 3;
         do {
-            System.out.print("Введіть число: ");
-            userGuess = scanner.nextInt();
-
-            if (userGuess < secretNumber) {
+            if (guess < randomNumber) {
                 System.out.println("Спробуйте більше число!");
-            } else if (userGuess > secretNumber) {
+                guess = scanner.nextInt();
+            } else if (guess > randomNumber) {
                 System.out.println("Спробуйте менше число!");
+                guess = scanner.nextInt();
             } else {
-                System.out.println("Вітаємо! Ви вгадали число!");
+                System.out.println("Вітаємо! Вивгадали загадане число!!!");
             }
-        } while (userGuess != secretNumber);
+        } while (guess != randomNumber);
 
-        scanner.close();
+        System.out.println("Завершення програми!!!");
     }
 }
