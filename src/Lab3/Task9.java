@@ -1,7 +1,10 @@
 package Lab3;
 
-public class Task9 {
+import java.util.Arrays;
+import java.util.Random;
+import java.util.Scanner;
 
+public class Task9 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
@@ -18,7 +21,7 @@ public class Task9 {
             System.out.print(num + " ");
         }
 
-        System.out.print("\nВведіть будь-який індекс елемента (від 0 до " + array.length + "): ");
+        System.out.print("Введіть будь-який індекс елемента (від 0 до " + array.length + "): ");
         int index = scanner.nextInt();
 
         if (index >= 0 && index < array.length) {
@@ -36,5 +39,4 @@ public class Task9 {
     }
 
 }
-
 
