@@ -3,7 +3,7 @@ package Lab3;
 import java.util.Random;
 import java.util.Scanner;
 
-public class SearchNumber {
+public class Task8 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
@@ -19,7 +19,6 @@ public class SearchNumber {
         }
 
         System.out.println("Яке число шукаєте?");
-
         int number = scanner.nextInt();
 
         boolean found = false;
